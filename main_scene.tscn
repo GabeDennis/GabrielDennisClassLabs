@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4vhqyjh18l8j"]
+
+[ext_resource type="Texture2D" uid="uid://buo7lhqklafn5" path="res://Assets/5b4eee44c051e602a568ce19.png" id="1_2c62f"]
+[ext_resource type="Texture2D" uid="uid://d0bdcdj6rxl5k" path="res://Assets/58eeb701ee9418469d17ee01.png" id="2_gyfs4"]
+[ext_resource type="PackedScene" uid="uid://ho37j2803qhr" path="res://haunted_house.tscn" id="3_d5x1h"]
+[ext_resource type="PackedScene" uid="uid://b1o60craaxpej" path="res://clouds.tscn" id="4_8mm7a"]
+[ext_resource type="PackedScene" uid="uid://dp58oyxre04k" path="res://fire.tscn" id="5_8mm7a"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="GoblinSprite" type="Sprite2D" parent="."]
+position = Vector2(200.00002, 406)
+scale = Vector2(0.42799997, 0.42388058)
+texture = ExtResource("1_2c62f")
+
+[node name="PrinceSprite" type="Sprite2D" parent="."]
+position = Vector2(982.99994, 356)
+scale = Vector2(0.47833347, 0.38913035)
+texture = ExtResource("2_gyfs4")
+
+[node name="HauntedHouse" parent="." instance=ExtResource("3_d5x1h")]
+position = Vector2(590, 253)
+scale = Vector2(0.5488281, 0.6588542)
+
+[node name="Clouds" parent="." instance=ExtResource("4_8mm7a")]
+position = Vector2(193.00002, 139)
+scale = Vector2(0.23189135, 0.33701548)
+
+[node name="Clouds2" parent="." instance=ExtResource("4_8mm7a")]
+position = Vector2(904, 100.99997)
+scale = Vector2(0.23088531, 0.2116279)
+
+[node name="Node2D" parent="." instance=ExtResource("5_8mm7a")]
+position = Vector2(541.99994, 509.62503)
+scale = Vector2(0.743644, 0.54498875)

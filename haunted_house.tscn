@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ho37j2803qhr"]
+
+[ext_resource type="Texture2D" uid="uid://y5iqvah7xyfi" path="res://Assets/584568e1746e3e42031117f3.png" id="1_c4xfi"]
+
+[node name="HauntedHouse" type="Sprite2D"]
+position = Vector2(562, 410)
+texture = ExtResource("1_c4xfi")
